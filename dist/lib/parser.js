@@ -184,7 +184,7 @@ var parseTweet = function parseTweet($, element) {
 };
 
 var toNumber = function toNumber(value) {
-  return parseInt((value || '').replace(/[^0-9]/g, '')) || 0;
+  return value;
 };
 
 var fromJoinDateToIso8601 = function fromJoinDateToIso8601(joinDateString) {

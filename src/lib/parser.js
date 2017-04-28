@@ -151,7 +151,7 @@ const parseTweet = ($, element) => {
   return tweet
 }
 
-const toNumber = (value) => parseInt((value || '').replace(/[^0-9]/g, '')) || 0
+const toNumber = (value) => value
 
 const fromJoinDateToIso8601 = (joinDateString) => {
   const [ month, year ] = joinDateString.replace('Joined', '').trim().split(' ')
