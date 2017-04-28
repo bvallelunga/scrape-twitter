@@ -217,6 +217,7 @@ var toTwitterProfile = function toTwitterProfile(_ref) {
   var $header = $('.ProfileHeaderCard');
   var $nav = $('.ProfileNav');
 
+  var backgroundImage = $avatar.find('.ProfileCanopy-headerBg img').attr('src');
   var profileImage = $avatar.find('.ProfileAvatar-image').attr('src');
   var screenName = $header.find('.ProfileHeaderCard-screenname > a').first().text().trim().substring(1);
   var name = parseText($, $header.find('.ProfileHeaderCard-name a').first());
@@ -236,6 +237,7 @@ var toTwitterProfile = function toTwitterProfile(_ref) {
   var userProfile = {
     screenName: screenName,
     profileImage: profileImage,
+    backgroundImage: backgroundImage,
     name: name,
     bio: bio,
     userMentions: userMentions,
